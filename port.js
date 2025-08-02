@@ -5,6 +5,6 @@ const port = 8001;
 // Serve static files from the "public" directory
 app.use(express.static('Frontend'));
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(8001, '0.0.0.0', () => {
+  console.log("Server running at http://0.0.0.0:8001");
 });
